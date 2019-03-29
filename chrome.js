@@ -8,7 +8,7 @@ exports.config = Object.assign({}, require('./hooks'), {
       browserName: 'chrome',
       chromeOptions: {
         // Disable headless mode if screen recordings are enabled:
-        args: ['--headless', '--window-size=1440,900']
+        args: ['--headed', '--window-size=1440,900']
       }
     }
   ],
