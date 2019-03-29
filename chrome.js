@@ -8,7 +8,7 @@ exports.config = Object.assign({}, require('./hooks'), {
       browserName: 'chrome',
       chromeOptions: {
         // Disable headless mode if screen recordings are enabled:
-        args: ['--headed', '--window-size=1440,900']
+        args: ['--headless', '--window-size=1440,3000']
       }
     }
   ],
@@ -25,7 +25,7 @@ exports.config = Object.assign({}, require('./hooks'), {
   },
   videos: {
     enabled: false,
-    resolution: '1440x900'
+    resolution: '1440x3000'
   },
   mailhog: {
     host: 'mailhog'
